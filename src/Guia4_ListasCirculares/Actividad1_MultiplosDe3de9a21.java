@@ -22,21 +22,12 @@ public class Actividad1_MultiplosDe3de9a21 {
         recorrer = Cabeza;
         int i = 0;
         while (i < 2) {
-            if (recorrer.sig == Cabeza) {
+            if (recorrer.sig == Cabeza.sig) {
                 i++;
             }
             System.out.println(recorrer.info);
             recorrer = recorrer.sig;
         }
-        
-        Nodo recorrido = Cabeza.sig;
-        while (recorrido != Cabeza) {
-                System.out.println(recorrido.info);
-                recorrido = recorrido.sig;
-            }
-       System.out.println(recorrido.info);
-
-
     }
 
 }
