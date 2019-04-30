@@ -43,7 +43,6 @@ public class Main {
             recorrido = recorrido.sig;
         }
         System.out.println(recorrido.info);
-        //System.out.println("Hola mundo");
 
     }
 
