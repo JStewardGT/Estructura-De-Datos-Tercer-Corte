@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         Nodo Lista1 = new Nodo();
         Nodo recorrer1 = Lista1;
-        for (int i = 3; i <= 30; i =+3) {
+        for (int i = 3; i <= 30; i+=3) {
             recorrer1.info = i;
             
             recorrer1.sig = new Nodo();
@@ -26,7 +26,7 @@ public class Main {
 
         Nodo Lista2 = new Nodo();
         Nodo recorrer2 = Lista2;
-        for (int i = 4; i <= 40; i =+4) {
+        for (int i = 4; i <= 40; i+=4) {
             recorrer2.info = i;
             
             recorrer2.sig = new Nodo();
@@ -38,12 +38,12 @@ public class Main {
         Lista2.sig.sig.sig.sig.sig.sig.sig.sig.sig.sig = Lista1;
         Nodo recorrido = Lista1.sig;
         System.out.println(Lista1.info);
-        while (recorrido == Lista1) {
+        while (recorrido != Lista1) {
             System.out.println(recorrido.info);
             recorrido = recorrido.sig;
         }
         System.out.println(recorrido.info);
-        System.out.println("Hola mundo");
+        //System.out.println("Hola mundo");
 
     }
 
