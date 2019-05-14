@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Main",
+      "request": "launch",
+      "mainClass": "ListaEnlazadaCompañeros.Main",
+      "projectName": "EstructuraDeDatosTercerCorte_53e149ac"
+    }
+  ]
+}
