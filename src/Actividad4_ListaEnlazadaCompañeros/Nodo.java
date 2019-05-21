@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package listasPar_Impar;
+package Actividad4_ListaEnlazadaCompañeros;
 
 /**
  *
  * @author stewa
  */
 public class Nodo {
-
-    public int info;
+    public Informacion info;
+    public InformacionCarros infoCarros;
     public Nodo sig;
 }

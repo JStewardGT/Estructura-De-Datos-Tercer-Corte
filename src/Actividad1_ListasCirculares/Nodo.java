@@ -1,4 +1,4 @@
-package Guia4_ListasCirculares;
+package Actividad1_ListasCirculares;
 
 /**
  *

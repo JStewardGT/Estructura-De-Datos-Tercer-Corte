@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ListaEnlazadaCompañeros;
+package Actividad4_ListaEnlazadaCompañeros;
 
 /**
  *
  * @author stewa
  */
-public class InformacionCarros {
-    
-    public String marca;
-    public String modelo;
-    public String color;
-    
+public class Informacion {
+
+    public String nombre;
+    public long documento;
+    public String correo;
+
 }
