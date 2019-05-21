@@ -3,7 +3,7 @@
  * y en otra lista los datos de tres vehículos (marca, modelo y color).
  * muéstrela en una sola lista circular enlazada en un archivo plano.
  */
-package Actividad4_ListaEnlazadaCompañeros;
+package Taller4Actividad4_ListaEnlazadaCompañeros;
 
 /**
  *

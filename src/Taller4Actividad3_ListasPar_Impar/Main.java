@@ -3,7 +3,7 @@
 * 31 a 39.  Concatene la lista de tal forma que quede los numero 30, 31, 32, …. ….40
 */
 
-package Actividad3_ListasPar_Impar;
+package Taller4Actividad3_ListasPar_Impar;
 
 /**
  *

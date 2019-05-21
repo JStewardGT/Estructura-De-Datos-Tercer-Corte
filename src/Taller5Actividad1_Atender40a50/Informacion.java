@@ -3,16 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Actividad4_ListaEnlazadaCompañeros;
+package Taller5Actividad1_Atender40a50;
 
-/**
- *
- * @author stewa
- */
 public class Informacion {
 
-    public String nombre;
-    public long documento;
-    public String correo;
-
+    public String dato;
 }
