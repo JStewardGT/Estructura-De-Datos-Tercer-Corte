@@ -26,16 +26,27 @@ public class Main {
                 Informacion info = new Informacion();
                 System.out.println("digite el Nombre:");
                 info.Nombre = Leer.dato();
-                System.out.println("digite la direccion:");
-                info.Direccion = Leer.dato();
-                System.out.println("digite la empresa:");
-                info.Empresa = Leer.dato();
+                System.out.println("digite la cedula:");
+                info.cc = Leer.dato();
+                System.out.println("digite la nota 1:");
+                info.nota1 = Leer.datoDouble();
+                System.out.println("digite la nota 2:");
+                info.nota2 = Leer.datoDouble();
+                System.out.println("digite la nota 3:");
+                info.nota3 = Leer.datoDouble();
+
+                info.promedio = (info.nota1 + info.nota2 + info.nota3) / 3;
+
                 cola.agregar(info);
+
             } else if (opcion == 2) {
                 Informacion info = cola.atender();
                 System.out.println("Nombre: " + info.Nombre);
-                System.out.println("Direccion: " + info.Empresa);
-                System.out.println("Empresa: " + info.Empresa);
+                System.out.println("cedula: " + info.cc);
+                System.out.println("nota 1: " + info.nota1);
+                System.out.println("nota 2: " + info.nota2);
+                System.out.println("nota 3: " + info.nota3);
+                System.out.println("promedio: " + info.promedio);
 
             } else if (opcion == 3) {
                 cola.listar();

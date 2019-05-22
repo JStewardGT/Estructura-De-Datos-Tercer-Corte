@@ -33,13 +33,16 @@ public class Colas {
         return new Informacion();
     }
 
-    public void listar(){
-      Nodo rec=cabeza;
-      while(rec!=null){
-          System.out.println("Nombre  "+rec.info.Nombre);
-          System.out.println("Direccion : "+rec.info.Direccion);
-          System.out.println("Empresa: "+rec.info.Empresa);
-          rec=rec.siguiente;
-      }
+    public void listar() {
+        Nodo rec = cabeza;
+        while (rec != null) {
+            System.out.println("Nombre: " + rec.info.Nombre);
+            System.out.println("cedula: " + rec.info.cc);
+            System.out.println("nota 1: " + rec.info.nota1);
+            System.out.println("nota 2: " + rec.info.nota2);
+            System.out.println("nota 3: " + rec.info.nota3);
+            System.out.println("promedio: " + rec.info.promedio);
+            rec = rec.siguiente;
+        }
     }
 }

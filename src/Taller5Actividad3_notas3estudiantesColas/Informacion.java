@@ -8,6 +8,9 @@ package Taller5Actividad3_notas3estudiantesColas;
 public class Informacion {
 
     public String Nombre;
-    public String Direccion;
-    public String Empresa;
+    public String cc;
+    public double nota1;
+    public double nota2;
+    public double nota3;
+    public double promedio;
 }
