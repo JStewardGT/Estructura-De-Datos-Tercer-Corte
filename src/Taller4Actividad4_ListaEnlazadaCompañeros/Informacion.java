@@ -12,7 +12,6 @@ package Taller4Actividad4_ListaEnlazadaCompañeros;
 public class Informacion {
 
     public String nombre;
-    public long documento;
+    public String cc;
     public String correo;
-
 }
