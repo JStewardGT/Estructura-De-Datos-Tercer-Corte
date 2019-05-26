@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Taller5Actividad4_archivoPlano;
+package Taller6Actividad1_promedio;
 
 /**
  *
  * @author stewa
  */
-public class Informacion {
+public class Nodo {
 
-    public String Nombre;
-    public String Documento;
-    public String Correo;
+    public Nodo siguiente;
+    public Informacion info;
+
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Taller5Actividad4_archivoPlano;
+package Taller6Actividad1_promedio;
 
 /**
  *
@@ -14,21 +14,22 @@ import java.io.PrintStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Cola {
+public class Pila {
+
     private Nodo cabeza;
+
     public void agregar(Informacion info) {
         if (cabeza == null) {
             cabeza = new Nodo();
             cabeza.info = info;
         } else {
-            Nodo rec = cabeza;
-            while (rec.siguiente != null) {
-                rec = rec.siguiente;
-            }
-            rec.siguiente = new Nodo();
-            rec.siguiente.info = info;
+            Nodo nuevo = new Nodo();
+            nuevo.info = info;
+            nuevo.siguiente = cabeza;
+            cabeza = nuevo;
         }
     }
+
     public Informacion atender() {
         if (cabeza != null) {
             Nodo temp = cabeza;
@@ -38,6 +39,16 @@ public class Cola {
         }
         return new Informacion();
     }
+
+    public void listar() {
+        Nodo rec = cabeza;
+        System.out.println("La pila esta conformada por ");
+        while (rec != null) {
+            System.out.print(rec.info.dato + "  ");
+            rec = rec.siguiente;
+        }
+    }
+    
     public void BajarArchivo(int e) {
         PrintStream salida = null;
         try {
@@ -55,5 +66,5 @@ public class Cola {
         } finally {
             salida.close();
         }
-    }
+
 }

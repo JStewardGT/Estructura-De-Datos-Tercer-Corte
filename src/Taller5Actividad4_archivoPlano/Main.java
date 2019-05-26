@@ -8,7 +8,7 @@ package Taller5Actividad4_archivoPlano;
 
 /**
  *
- * @author stewa
+ * @author steward
  */
 public class Main {
 
@@ -17,35 +17,33 @@ public class Main {
      */
     public static void main(String[] args) {
         Cola cola = new Cola();
-        int opcion = -1;
-        while (opcion != 4) {
-            System.out.println("MENU:");
-            System.out.println("1. agregar");
-            System.out.println("2. atender");
-            System.out.println("3. guardar ");
-            System.out.println("4. salir");
-            opcion = Leer.datoInt();
-            if (opcion == 1) {
-                Informacion info = new Informacion();
-                System.out.println("digite el Nombre:");
-                info.Nombre = Leer.dato();
-                System.out.println("digite la direccion:");
-                info.Direccion = Leer.dato();
-                System.out.println("digite la empresa:");
-                info.Empresa = Leer.dato();
-                cola.agregar(info);
-            } else if (opcion == 2) {
-                Informacion info = cola.atender();
-                System.out.println("Nombre: "+info.Nombre);
-                System.out.println("Direccion: "+info.Empresa);
-                System.out.println("Empresa: "+info.Empresa);
-            }else if (opcion == 3) {
-                cola.BajarArchivo();
-                System.out.println("La informacion fue guardada en el archivo");
-            }
+
+        for (int i = 0; i < 5; i++) {
+            Informacion info = new Informacion();
+            info.Nombre = "Persona " + i;
+            System.out.println("Nombre: " + info.Nombre);
+            info.Documento = "Documento " + i;
+            System.out.println("Direccion: " + info.Documento);
+            info.Correo = "Correo " + i;
+            System.out.println("Empresa: " + info.Correo);
+            cola.agregar(info);
         }
+
+        cola.BajarArchivo(1);
+        System.out.println("La informacion fue guardada en el archivo");
+
+        for (int i = 0; i < 3; i++) {
+            Informacion info = cola.atender();
+            System.out.println("Nombre: " + info.Nombre);
+            System.out.println("Direccion: " + info.Documento);
+            System.out.println("Empresa: " + info.Correo);
+        }
+
+        cola.BajarArchivo(2);
+        System.out.println("La informacion fue guardada en el archivo");
+
         System.out.println("terminado");
 
     }
-    
+
 }
