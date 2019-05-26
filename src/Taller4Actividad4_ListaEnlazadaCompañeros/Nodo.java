@@ -11,6 +11,5 @@ package Taller4Actividad4_ListaEnlazadaCompañeros;
  */
 public class Nodo {
     public Informacion info;
-    public InformacionCarros infoCarros;
     public Nodo sig;
 }
