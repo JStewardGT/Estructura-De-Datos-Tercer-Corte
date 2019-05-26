@@ -10,5 +10,9 @@ package Taller6Actividad1_promedio;
  * @author stewa
  */
 public class Informacion {
-    public String dato;
+    public String nombre;
+    public double nota1;
+    public double nota2;
+    public double nota3;
+    public double promedio;
 }
