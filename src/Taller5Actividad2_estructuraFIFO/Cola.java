@@ -35,9 +35,9 @@ public class Cola {
 
     public void listar() {
         Nodo rec = cabeza;
-        System.out.println("La cola esta conformada por ");
+        System.out.println("LA COLA ESTA CONFORMADA POR:");
         while (rec != null) {
-            System.out.print(rec.info.dato + "  ");
+            System.out.print(rec.info.dato + "   ");
             rec = rec.siguiente;
         }
     }
