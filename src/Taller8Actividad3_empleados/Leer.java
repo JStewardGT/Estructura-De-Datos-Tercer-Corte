@@ -5,7 +5,6 @@
  */
 package Taller8Actividad3_empleados;
 
-import Taller8Actividad2_datosEstudiantes.*;
 import java.io.*;
 
 public class Leer {

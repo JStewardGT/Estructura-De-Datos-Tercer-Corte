@@ -5,16 +5,14 @@
  */
 package Taller8Actividad3_empleados;
 
-import Taller8Actividad2_datosEstudiantes.*;
-
 /**
  *
- * @author stewa
+ * @author steward
  */
 public class AdministradorArbol {
 
     public Nodo insertarNuevo(Nodo arbol, Nodo nuevo) {
-        if (arbol.codigo > nuevo.codigo) {
+        if (arbol.cedula > nuevo.cedula) {
             if (arbol.izq == null) {
                 arbol.izq = nuevo;
                 return arbol;
@@ -33,20 +31,14 @@ public class AdministradorArbol {
         }
     }
 
-    public void recorrerrid(Nodo arbol) {
+    public void recorrerrid(Nodo arbol, int buscar) {
         if (arbol != null) {
-            recorrerrid(arbol.izq);
-            System.out.println("\t\t" + arbol.codigo + "\t\t" + arbol.curso + "\t\t" + arbol.carrera);
-            recorrerrid(arbol.der);
+            if (buscar == arbol.cedula) {
+                System.out.println("El empleado es: ");
+                System.out.println("\t\t" + arbol.cedula + "\t\t" + arbol.nombre);
+            }
+            recorrerrid(arbol.izq, buscar);
+            recorrerrid(arbol.der, buscar);
         }
     }
-    
-    public void recorrerpostorden(Nodo arbol){
-        if (arbol != null) {
-            recorrerpostorden(arbol.izq);
-            recorrerpostorden(arbol.der);
-            System.out.println("\t\t" + arbol.codigo + "\t\t" + arbol.curso + "\t\t" + arbol.carrera);
-        }
-    }
-
 }
