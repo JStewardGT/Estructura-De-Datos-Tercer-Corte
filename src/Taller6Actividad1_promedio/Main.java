@@ -15,7 +15,6 @@ public class Main {
     public static void main(String[] args) {
         Pila pila = new Pila();
 
-        
         int opcion = -1;
         while (opcion != 4) {
             System.out.println("MENU:");
